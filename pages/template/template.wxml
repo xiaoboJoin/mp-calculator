@@ -1,0 +1,7 @@
+<template name="x-input">
+  <view class='inputView'>
+  <text class='inputViewTitle'>{{title}}</text>
+  <input class='inputViewInput' placeholder='0' bindinput="inputChanged">{{value}}</input>
+  </view>
+</template>
+

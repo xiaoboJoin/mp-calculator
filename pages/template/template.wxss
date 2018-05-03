@@ -1,0 +1,14 @@
+
+.inputView {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.inputViewTitle {
+  display: flex;
+  align-items: left;
+}
+.inputViewInput {
+  display: flex;
+  align-items: right;
+}
