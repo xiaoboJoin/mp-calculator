@@ -2,13 +2,38 @@
 .inputView {
   display: flex;
   flex-direction: row;
-  align-items: center;
+   align-items: center; 
 }
 .inputViewTitle {
   display: flex;
-  align-items: left;
+  align-items: right;
 }
 .inputViewInput {
   display: flex;
+  /* background-color: red; */
+  text-align: right;
+  /* align-items: right; */
+}
+
+
+.value2View {
+  display: flex;
+  flex-direction: row;
+   align-items: center; 
+}
+.value2Title {
+  display: flex;
   align-items: right;
+}
+.value2ButtonInput {
+  display: flex;
+  /* background-color: red; */
+  text-align: right;
+  /* align-items: right; */
+}
+.value2Icon {
+  display: flex;
+  /* background-color: red; */
+  text-align: right;
+  /* align-items: right; */
 }

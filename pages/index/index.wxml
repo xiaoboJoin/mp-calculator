@@ -11,7 +11,12 @@
       <text class="userinfo-nickname">{{income}}</text>
     </block>
   </view>
-  <template is="x-input" data="{{...tax}}"/>
+ <view class="section">
+  <template is="x-input" data="{{...city}}"/>
+  </view>
+  <view class="section">
+  <template is="x-value2" data="{{...city}}"/>
+  </view>
   <view class="usermotto">
     <text class="user-motto">{{motto}}</text>
   </view>

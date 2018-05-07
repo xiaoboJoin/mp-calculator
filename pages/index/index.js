@@ -4,24 +4,36 @@ import taxcal from "../../utils/taxCal.js"
 const app = getApp()
 Page({
   data: {
-    motto: 'Hello World',
+   
     userInfo: {},
     hasUserInfo: false,
     income:100,
-    tax:{
-      title:"额度",
-      value:100,
-      inputChanged:function(value){
-        console.log(value);
-      }
+    city: {
+      'title':"当前城市",
+      'value':'北京',
+    },
+    shebao:{
+
+    },
+    gongjijin:{
+
+    },
+    yanglaobaoxian:{
+
+    },
+    yiliaobaoxian:{
+
+    },
+    shiyebaoxian:{
+
+    },
+    zhufanggongjijin:{
+
+    },
+    income: {
+
     },
     canIUse: wx.canIUse('button.open-type.getUserInfo')
-  },
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
   },
   onLoad: function () {
     if (app.globalData.userInfo) {
@@ -53,12 +65,35 @@ Page({
     this.getTax(7450);
     
   },
+  bindKeyInput: function (e) {
+    this.setData({
+      inputValue: e.detail.value
+    })
+  },
+  //事件处理函数
+  bindViewTap: function () {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
   getTax:function(tax){
 
     this.setData({
       income:taxcal(tax).income,
     })
 
+  },
+  inputChanged: function (value) {
+    console.log(value)
+    // this.setData({
+    //   tax:{
+    //     title:"额度",
+    //     value: value.detail.value,
+    //   }
+    // })
+  },
+  onTap:function(e){
+    console.log(e)
   },
   getUserInfo: function(e) {
     console.log(e)

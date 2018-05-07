@@ -1,7 +1,16 @@
 <template name="x-input">
   <view class='inputView'>
   <text class='inputViewTitle'>{{title}}</text>
-  <input class='inputViewInput' placeholder='0' bindinput="inputChanged">{{value}}</input>
+  <input class='inputViewInput' type='Number' id="{{title}}" value='{{value}}' bindinput="inputChanged"></input>
+  </view>
+</template>
+
+<template name="x-value2">
+  <view class='value2View' bindtap='onTap' >
+  <text class='value2Title'>{{title}}</text>
+  <text class='value2Title'>{{value}}</text>
+  <!-- <button class='value2Button' bindtap='onTap' >{{value}}</button> -->
+  <icon class='value2Icon'>{{icon}}</icon>
   </view>
 </template>
 
