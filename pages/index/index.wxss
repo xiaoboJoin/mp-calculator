@@ -21,3 +21,11 @@
 .usermotto {
   margin-top: 200px;
 }
+.section {
+   display: flex; 
+   background-color: blue;
+   flex-direction: row;
+   /* align-items: flex-end; */
+   /* padding: 16px 16px; */
+   margin: 16px 16px;
+}

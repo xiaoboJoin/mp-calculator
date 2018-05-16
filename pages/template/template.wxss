@@ -19,7 +19,8 @@
 .value2View {
   display: flex;
   flex-direction: row;
-   align-items: center; 
+  justify-content: space-between;
+  align-items: flex-start;  
 }
 .value2Title {
   display: flex;

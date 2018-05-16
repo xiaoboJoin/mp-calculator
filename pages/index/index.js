@@ -4,12 +4,11 @@ import taxcal from "../../utils/taxCal.js"
 const app = getApp()
 Page({
   data: {
-   
     userInfo: {},
     hasUserInfo: false,
     income:100,
     city: {
-      'title':"当前城市",
+      'title':"城市",
       'value':'北京',
     },
     shebao:{
@@ -77,7 +76,6 @@ Page({
     })
   },
   getTax:function(tax){
-
     this.setData({
       income:taxcal(tax).income,
     })
